@@ -1,0 +1,90 @@
+sk_test_f49b09da906e459287b5321780593c180f0f5445
+
+pk_test_6b3a4575c0c21b425c8e1fb55344f99e6115bc09
+
+https://iboiye.com/wc-api/Tbz_WC_Paystack_Webhook/
+
+
+{'paidAt': None, 
+'paid_at': None, 
+'created_at': '2016-02-17T10:12:00.000Z', 
+'status': 'abandoned', 
+'domain': 'test', 
+'subaccount': {}, 
+'metadata': None, 
+'ip_address': '54.194.95.129', 
+'channel': 'card', 
+'customer': {'last_name': 'james', 'metadata': None, 'customer_code': 'CUS_jemg85nfijhrp1s', 'phone': '08030495860',
+'first_name': 'samuel', 'id': 4013, 'email': 'samuel.james@andela.com', 'risk_action': 'default'}, 
+'gateway_response': 'The transaction was not completed', 
+'log': None, 
+'createdAt': '2016-02-17T10:12:00.000Z', 
+'id': 10029, 
+'fees': None, 
+'currency': 'NGN', 
+'plan': {}, 
+'fees_split': None, 
+'reference': 'getupall', 
+'amount': 12000, 
+'message': None, 
+'authorization': {}}
+
+
+
+response = Plan.create(name='value', description='value', 
+                       amount=amount, interval='value', 
+                       send_invoices='value', 
+                       send_sms='value',
+                       hosted_page='value', 
+                       hosted_page_url='value',
+                       hosted_page_summary='value', 
+                       currency='value')
+
+
+
+key*
+Your Public Key from Paystack. Use test public key for test mode and live public key for live mode
+ref
+Case-sensitive unique transaction reference. Only -,., = and alphanumeric characters allowed.
+email*
+The customer's email address.
+amount*
+Amount in kobo. Ignored if creating a subscription.
+callback
+Javascript function that should be called if the payment is successful
+onClose
+Javascript function that should be called if the customer closes the payment window
+currency
+Currency charge should be performed in. Default is NGN
+For Subscribing
+plan
+If transaction is to create a subscription to a predefined plan, provide plan code here.
+invoice_limit
+Number of invoices to raise during the subscription. Overrides invoice_limit set on plan.
+quantity
+Used to apply a multiple to the amount returned by the plan code above.
+
+
+For example, at this junction, I hold up is determining if the subscriptions are pre-created or created at runtime and evaluating how that will affect overall speed weighed against how I can leverage the speed with javascript but with the drawback that javascript is client side and that kind of validation (although fast)  can be deadly if no validation is done on server-side. Afterwhich I'll need to figure out if the client should talk to paystack or the server should because if  response time is delayed, the current transaction can be faulted causing an error 500 to the user...          
+
+If I can answer this question, I will be done with this app in 3hours or less 
+Yes coding is sweet, however frustrating debugging can be
+
+for i=100 to 5000, 100: daily subscription  types
+
+I think talking to you is cleaning somethings out
+
+for amount it is 100 to 5000                        
+[22:08, 8/7/2017] +234 802 266 0640: paid daily                        
+[22:08, 8/7/2017] +234 802 266 0640: while target is from 2days to 800days                        
+[22:09, 8/7/2017] +234 802 266 0640: so 50 * 800 = 40,000 possible daily plans                        
+[22:09, 8/7/2017] Oluyimide Onaolapo: Okhain                        
+[22:10, 8/7/2017] Oluyimide Onaolapo: I hope you graduated from Eksu with first class                        
+[22:11, 8/7/2017] +234 802 266 0640: 1000 -25,000 = 25
+25 * 200 = 5000 possible weekly plans                        
+[22:12, 8/7/2017] +234 802 266 0640: 2000 - 100,000 = 50,000
+200 * 50,000 = 10,000,000 Possible monthly plans                        
+[22:13, 8/7/2017] +234 802 266 0640: 10,000,000 + 40,000 + 50, 000 = 10, 090, 000 possible plans all together                        
+[22:15, 8/7/2017] +234 802 266 0640: Now it's clear and obvious to me why my mind is having some consideration as what the nest step should be                        
+[22:16, 8/7/2017] +234 802 266 0640: Thanks for listening                        
+[22:17, 8/7/2017] +234 802 266 0640: I'm now clear on some thoughts

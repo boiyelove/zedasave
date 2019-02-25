@@ -1,0 +1,26 @@
+{% extends 'accounts/inside.html' %}
+
+{% block inside_html %}
+			<p class="text-center">
+						<form method="{{ form_method }}" action="{{ form_action }}" class="form-group text-center col-md-8">
+							{% csrf_token %}
+							<h3>Make a one-time deposit</h3>
+							
+							<br>
+							<div class="form-group">
+							  <label class="control-label">How much would you like to quickly save? <br>
+							  (₦100 - ₦25000) </label>
+
+							  {% if form.amount.errors %} <span class="text-danger">{{ form.amount.errors }}  </span>{% endif %}
+							  <input type="number" min-length="3" maxlength="6" id="id_amount" name="amount" class="form-control" required>
+							</div>
+							<br>
+							<input type="submit" class="btn btn-primary col-md-12" value="Quick Save" name=""/>
+						</form>
+						</p>
+{% endblock %}
+
+
+{% block extrajs %}
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'accounts/inside.html' %}
+
+{% block inside_html %}
+
+<div class="row">
+<br><br>
+<div id="page_message">
+{% if error_message %}
+<p class="row col-md-6 text-center bg-warning"><i class="fa fa-icon-warning-sign"></i> {{ error_message }} </p>
+{% else %} 
+</div>
+<br><br><br>
+<div id ="payment-block">
+  <form >
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <button class="btn btn-success btn-lg col-md-6" type="button" onclick="payWithPaystack()">Confirm Subscription</button> 
+</form>
+</div>
+
+<br>
+<br>
+<hr>
+<p class="row bg-success"><i class="fa fa-lock"></i> This page and all data is securely transmitted and encrypted. PCI compliance 3.0 Secure. HTTPS, SSL encryption. 
+<br>
+<i class="fa fa-mastercard"></i> Payments are processed securely by Paystack and safely deposited in Wema Bank PLC</p>
+{% endif %}
+</div>
+
+
+{% endblock %}
+
+
+{% block extra_js %}
+						 function verifyTransaction(refCode){
+						 console.log('ref code is ', refCode)
+						 url =  'http://127.0.0.1:8000/zeraplans/transaction/check/' + refCode + '/1/';
+						  $.ajax(url, {
+						  	type: "GET",
+						  	statusCode: {
+						  	  200: function (response) {
+									      $('#payment-block').html('<p class="row text-center bg-success"><i class="fa fa-check-circle-o"></i> You have successfully subscribed. <br> <br> <a href="/dashboard/" class="btn btn-primary col-md-12">Continue to dashboard</a> </p>');
+								      },
+						      404: function (response) {
+						         $('#page_message').html('<p class="row col-md-6 text-center bg-danger"><i class="fa fa-icon-warning-sign"></i>Oops something went wrong</p>');
+						      },
+						      500: function (response){
+						      	 alert('Oops! something went wrong');
+						      	 $('#page_message').html('<p class="row col-md-6 text-center bg-warning"><i class="fa fa-icon-warning-sign"></i>Oops something went wrong</p>');
+						      },
+						  	}
+						  })
+						  }
+
+						  function payWithPaystack(){
+						  	 $('#page_message').html('')
+						    var handler = PaystackPop.setup({
+						      key: 'pk_test_6b3a4575c0c21b425c8e1fb55344f99e6115bc09',
+						      email: '{{ request.user.email }}',
+						      amount: {{ plan_data.amount }},
+						      metadata: {
+						         custom_fields: [
+						            {
+						                display_name: "Mobile Number",
+						                variable_name: "mobile_number",
+						                value: "{{ request.user.userprofile.phone }}"
+						            }
+						         ]
+						      },
+						      callback: function(response){	
+						      	verifyTransaction(response.reference);
+
+							      },
+						      onClose: function(){
+						          alert('window closed');
+						      }
+						    });
+						    handler.openIframe();
+						  }
+
+
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'accounts/inside.html' %}
+
+{% block inside_html %}
+
+{% if withdrawal_list %}
+	<div class="table-responsive">
+  <table class="table">
+	  <thead>
+	  	<th>#</th>
+	  	<th>Account Name</th>
+	  	<th>bank Name</th>
+	  	<th>Amount</th>
+	  	<th>Date</th>
+	  </thead>
+		   <tbody>
+		   		{% for withdrawal in withdrawal_list %}
+					<tr>
+						<td> {{forloop.counter }}</td>
+						<td> {{withdrawal.bank_details.account_name}}</td>
+						<td> {{withdrawal.amount}} </td>
+						<td> {{withdrawal.created_on}} </td>
+					</tr>
+				{% endfor %}
+		   </tbody>
+	  </table>
+	</div>
+{% else %}
+<br>
+<br>
+<h3 class="text-center">No Withdrawals Done Yet</h3>
+
+{% endif %}
+{% endblock %}

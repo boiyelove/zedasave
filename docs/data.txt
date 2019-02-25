@@ -1,0 +1,162 @@
+curl "https://api.paystack.co/customer" \-
+H "Authorization: Bearer SECRET_KEY" \
+-H "Content-Type: application/json" \
+-d '{"email": "bojack@horsinaround.com"}' \ 
+
+
+sk_test_f49b09da906e459287b5321780593c180f0f5445
+url = "https://api.paystack.co/customer"
+header = {'Authorization': 'sk_test_f49b09da906e459287b5321780593c180f0f5445','Content-Type': 'application/json'}
+
+payload = {'email': 'anupraise@wee.com'}
+
+requests.post(url, data = json.dumps(payload), headers=headers)
+
+
+
+'PLN_ephsqd7xuj3moc3',
+'PLN_x8nwm6ldtkb2bz2',
+'PLN_hhplwqsn7kx9t0e',
+'PLN_ms1opwh2vmug7ny', 
+'PLN_4zo9rt8d95uipql
+'PLN_qoobykr9sp7o157', 
+'PLN_1am6zsll00agwyb', 
+'PLN_pnaiy4zw663byw4', 
+'PLN_qwx5jjxhinis75m',
+
+[{'subscriptions': [], 'createdAt': '2017-08-08T12:34:26.000Z', 'hosted_page_url
+': None, 'name': 'Daily Saving 400', 'hosted_page': False, 'id': 4915, 'amount':
+ 40000, 'send_sms': True, 'integration': 112691, 'migrate': False, 'send_invoice
+s': True, 'updatedAt': '2017-08-08T12:34:26.000Z', 'hosted_page_summary': None,
+'description': None, 'currency': 'NGN', 'interval': 'daily', 'domain': 'test', '
+plan_code': 'PLN_ephsqd7xuj3moc3', 'invoice_limit': 0}, {'subscriptions': [], 'c
+reatedAt': '2017-08-08T13:50:45.000Z', 'hosted_page_url': None, 'name': 'DSP-400
+', 'hosted_page': False, 'id': 4920, 'amount': 40000, 'send_sms': True, 'integra
+tion': 112691, 'migrate': False, 'send_invoices': True, 'updatedAt': '2017-08-08
+T13:50:45.000Z', 'hosted_page_summary': None, 'description': 'Daily Saving Plan
+400.00', 'currency': 'NGN', 'interval': 'daily', 'domain': 'test', 'plan_code':
+'PLN_x8nwm6ldtkb2bz2', 'invoice_limit': 0}, {'subscriptions': [], 'createdAt': '
+2017-08-08T16:15:49.000Z', 'hosted_page_url': None, 'name': 'DSP-4000', 'hosted_
+page': False, 'id': 4923, 'amount': 400000, 'send_sms': True, 'integration': 112
+691, 'migrate': False, 'send_invoices': True, 'updatedAt': '2017-08-08T16:15:49.
+000Z', 'hosted_page_summary': None, 'description': None, 'currency': 'NGN', 'int
+erval': 'daily', 'domain': 'test', 'plan_code': 'PLN_hhplwqsn7kx9t0e', 'invoice_
+limit': 0}, {'subscriptions': [], 'createdAt': '2017-08-08T16:57:48.000Z', 'host
+ed_page_url': None, 'name': 'DSP-100', 'hosted_page': False, 'id': 4924, 'amount
+': 10000, 'send_sms': True, 'integration': 112691, 'migrate': False, 'send_invoi
+ces': True, 'updatedAt': '2017-08-08T16:57:48.000Z', 'hosted_page_summary': None
+, 'description': None, 'currency': 'NGN', 'interval': 'daily', 'domain': 'test',
+ 'plan_code': 'PLN_ms1opwh2vmug7ny', 'invoice_limit': 0}, {'subscriptions': [],
+'createdAt': '2017-08-08T16:57:56.000Z', 'hosted_page_url': None, 'name': 'DSP-1
+01', 'hosted_page': False, 'id': 4925, 'amount': 10100, 'send_sms': True, 'integ
+ration': 112691, 'migrate': False, 'send_invoices': True, 'updatedAt': '2017-08-
+08T16:57:56.000Z', 'hosted_page_summary': None, 'description': None, 'currency':
+ 'NGN', 'interval': 'daily', 'domain': 'test', 'plan_code': 'PLN_4zo9rt8d95uipql
+', 'invoice_limit': 0}, {'subscriptions': [], 'createdAt': '2017-08-08T16:58:06.
+000Z', 'hosted_page_url': None, 'name': 'DSP-102', 'hosted_page': False, 'id': 4
+926, 'amount': 10200, 'send_sms': True, 'integration': 112691, 'migrate': False,
+ 'send_invoices': True, 'updatedAt': '2017-08-08T16:58:06.000Z', 'hosted_page_su
+mmary': None, 'description': None, 'currency': 'NGN', 'interval': 'daily', 'doma
+in': 'test', 'plan_code': 'PLN_qoobykr9sp7o157', 'invoice_limit': 0}, {'subscrip
+tions': [], 'createdAt': '2017-08-08T16:58:13.000Z', 'hosted_page_url': None, 'n
+ame': 'DSP-103', 'hosted_page': False, 'id': 4927, 'amount': 10300, 'send_sms':
+True, 'integration': 112691, 'migrate': False, 'send_invoices': True, 'updatedAt
+': '2017-08-08T16:58:13.000Z', 'hosted_page_summary': None, 'description': None,
+ 'currency': 'NGN', 'interval': 'daily', 'domain': 'test', 'plan_code': 'PLN_9qj
+l566rl3ux1rb', 'invoice_limit': 0}, {'subscriptions': [], 'createdAt': '2017-08-
+08T16:58:19.000Z', 'hosted_page_url': None, 'name': 'DSP-104', 'hosted_page': Fa
+lse, 'id': 4928, 'amount': 10400, 'send_sms': True, 'integration': 112691, 'migr
+ate': False, 'send_invoices': True, 'updatedAt': '2017-08-08T16:58:19.000Z', 'ho
+sted_page_summary': None, 'description': None, 'currency': 'NGN', 'interval': 'd
+aily', 'domain': 'test', 'plan_code': 'PLN_1am6zsll00agwyb', 'invoice_limit': 0}
+, {'subscriptions': [], 'createdAt': '2017-08-08T16:58:26.000Z', 'hosted_page_ur
+l': None, 'name': 'DSP-105', 'hosted_page': False, 'id': 4929, 'amount': 10500,
+'send_sms': True, 'integration': 112691, 'migrate': False, 'send_invoices': True
+, 'updatedAt': '2017-08-08T16:58:26.000Z', 'hosted_page_summary': None, 'descrip
+tion': None, 'currency': 'NGN', 'interval': 'daily', 'domain': 'test', 'plan_cod
+e': 'PLN_pnaiy4zw663byw4', 'invoice_limit': 0},
+
+ {'subscriptions': [], 
+'createdAt': '2017-08-08T16:58:33.000Z', 
+'hosted_page_url': None, 
+'name': 'DSP-106', 
+'hosted_page': False, 
+'id': 4930, 
+'amount': 10600, 'send_sms': True, 'integration': 1
+12691, 'migrate': False, 'send_invoices': True, 'updatedAt': '2017-08-08T16:58:3
+3.000Z', 'hosted_page_summary': None, 'description': None, 'currency': 'NGN', 'i
+nterval': 'daily', 'domain': 'test', 'plan_code': 'PLN_qwx5jjxhinis75m', 'invoic
+e_limit': 0}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						      key: 'pk_test_6b3a4575c0c21b425c8e1fb55344f99e6115bc09',
+						      plan: "PLN_code",
+						      ref: "UNIQUE TRANSACTION REFERENCE HERE",
+						      invoice_limit: "5",
+
+
+4084 0840 8408 4081
+
+01 / 20
+
+20172gmailing
+20172@gmailing
+daahrmmieboiye+20172@gmail.com
+
+408
+
+{% include 'webcore/_shared/footer.html' %}

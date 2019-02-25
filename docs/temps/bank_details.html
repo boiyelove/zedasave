@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bank Details</title>
+
+    <!-- Bootstrap -->
+    <link href="http://localhost/repo/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost/repo/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	    <nav class="navbar">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+			<!-- <nav class="navbar navbar-default"> -->
+			  
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">
+			        <img alt="Zerasave" src="assets/img/logo.jpeg" class="img-responsive" style="height:30px; width:auto;">
+			      </a>
+			    </div>
+			
+			<!-- </nav> -->
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		     <ul class="nav navbar-nav navbar-right">
+		       <li><a href="#">About</a></li>
+		        <li class="active"><a href="#">My Savings <span class="sr-only">(current)</span></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span> John Doe <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Settings</a></li>
+		            <li><a href="#">Help</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Logout</a></li>
+		          </ul>
+		        </li>
+		         <li><a href="#">Login</a></li>
+		          <li><a href="#">Register</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<div id="page-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="container-fluid">
+							<ul class="nav nav-pills nav-stacked">
+									 <li role="presentation" class="active"><a href="savings.html">My Savings</a></li>
+				  					 <li role="presentation"><a href="profile.html">Profile</a></li>
+				  					<li role="presentation"><a href="bank_details.html">Withdrawal</a></li>
+									<li><a href="settings.html">Settings</a></li>
+						            <li><a href="#">Help</a></li>
+						            <li role="separator" class="divider"></li>
+						            <li><a href="login.html">Login</a></li>
+						            <li><a href="register.html">Register</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 right-main">
+
+								<h3>Account Details</h3>
+								<hr>
+								<br><br>
+								<form>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-university"></i></span>
+										<select name="ctl00$ContentPlaceHolder1$ddlBankName" id="ContentPlaceHolder1_ddlBankName" class="form-control">
+											<option value="choose_bank">Choose bank</option>
+											<option value="Access Bank">Access Bank</option>
+											<option value="Citibank">Citibank</option>
+											<option value="Diamond Bank">Diamond Bank</option>
+											<option value="Ecobank Nigeria">Ecobank Nigeria</option>
+											<option value="Enterprise Bank Limited">Enterprise Bank Limited</option>
+											<option value="Fidelity Bank Nigeria">Fidelity Bank Nigeria</option>
+											<option value="First Bank of Nigeria">First Bank of Nigeria</option>
+											<option value="First City Monument Bank">First City Monument Bank</option>
+											<option value="FSDH Merchant Bank">FSDH Merchant Bank</option>
+											<option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+											<option value="Heritage Bank Plc.">Heritage Bank Plc.</option>
+											<option value="Keystone Bank Limited">Keystone Bank Limited</option>
+											<option value="Mainstreet Bank Limited">Mainstreet Bank Limited</option>
+											<option value="Rand Merchant Bank">Rand Merchant Bank</option>
+											<option value="Savannah Bank">Savannah Bank</option>
+											<option value="Skye Bank">Skye Bank</option>
+											<option value="Stanbic IBTC Bank Nigeria Limited">Stanbic IBTC Bank Nigeria Limited</option>
+											<option value="Standard Chartered Bank">Standard Chartered Bank</option>
+											<option value="Sterling Bank">Sterling Bank</option>
+											<option value="Union Bank of Nigeria">Union Bank of Nigeria</option>
+											<option value="United Bank for Africa">United Bank for Africa</option>
+											<option value="Unity Bank Plc.">Unity Bank Plc.</option>
+											<option value="Wema Bank">Wema Bank</option>
+											<option value="Zenith Bank">Zenith Bank</option>
+
+										</select>
+									</div>
+									<br>
+									<div class="input-group">
+										<span class="input-group-addon">A/Name</span>
+										<input type="text" class="form-control" name="other_names" placeholder="Account Name"/>
+									</div>
+									<br>
+									<div class="input-group">
+										<span class="input-group-addon">A/Numer</span>
+										<input type="text" class="form-control" name="Email" placeholder="Account Number"/>
+									</div>
+									<br>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+										<input type="text" class="form-control" name="phone" placeholder="Phone Number"/>
+									</div>
+									<br>
+
+									<input type="submit" value="Update" class="btn btn-primary">
+								</form>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="footer">
+				<div class="container">
+					<div class="col-md-4">
+					<div class="row">
+					 <img alt="Zerasave" src="assets/img/logo.jpeg" class="img-responsive" style="height:35px; width:auto; margin-bottom: 20px;">
+					</div>
+					<div class="row">
+					Address here
+					</div>
+					<div class="row">
+					contact@example.com
+					</div>
+					<div class="row">
+					070PhoneNumber
+					</div>
+					</div>
+					<div class="col-md-4">
+					<h3>Accepted cards</h3>
+					</div>
+					<div class="col-md-4">
+					<h3>Connect</h3>
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://localhost/repo/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://localhost/repo/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

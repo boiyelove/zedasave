@@ -1,0 +1,35 @@
+<table>
+	<thead>
+		<th>Reference</th>
+		<th>Amount</th>
+		<th>Transaction Id</th>
+		<th>Paid on</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Status</th>
+		<th>Customer Id</th>
+		<th>Customer Code</th>
+	</thead>
+	<tbody>
+		{% for item in transactions %}
+		<tr>
+			<td> {{ item.reference }}</td>
+			<td> {{ item.amount }}</td>
+			<td> {{ item.id }}</td>	
+			<td> {{ item.paidAt }}</td>	
+			<td> {{ item.customer.first_name }}</td>
+			<td> {{ item.customer.last_name }}</td>
+			<td> {{ item.customer.email }}</td>
+			<td> {{ item.gateway_response }}</td>
+			<td> {{ item.customer.id }}</td>
+			<td> {{ item.customer.customer_code }}</td>
+		</tr>
+		{% endfor %}
+
+	</tbody>
+</table>
+
+<br><br><br>
+<p>Sample Date</p>
+{'fees': 17500, 'paid_at': '2017-09-11T08:06:16.000Z', 'created_at': '2017-09-11T08:05:33.000Z', 'plan': {}, '': 'Successful', 'createdAt': '2017-09-11T08:05:33.000Z', 'paidAt': '2017-09-11T08:06:16.000Z', 'ip_address':'197.253.1.185', 'log': {'time_spent': 45, 'authentication': None, 'channel': None, 'input': [], 'attempts': 1, 'success': True, 'mobile': False, 'history': [{'message': 'Filled these fields: card number, card expiry, card cvv', 'time': 43, 'type': 'input'}, {'message': 'Attempted to pay', 'time': 43, 'type': 'action'}, {'message': 'Successfully paid', 'time': 44, 'type': 'success'}, {'message': 'Page closed', 'time': 45, 'type': 'close'}], 'errors': 0}, 'authorization': {'bin': '408408', 'exp_year': '2020', 'brand': 'visa', 'channel': 'card', 'reusable': True, 'authorization_code': 'AUTH_41otjp54do', 'country_code': 'NG', 'signature': 'SIG_7ESsNPQLvVB9wZBYTmKU', 'exp_month': '01', 'card_type': 'visa DEBIT', 'bank': 'Test Bank', 'last4': '4081'}, 'id': 3356061, 'reference': 'T825057789851244', 'subaccount': {}, 'customer': {'customer_code': 'CUS_p7ndizk8vu1bhc6', 'id': 671736, 'phone': '8120256080', 'last_name': 'Boiyelove', 'first_name': 'Damilola', 'risk_action': 'default', 'email': 'daahrmmieboiye@gmail.com', 'metadata': None}, 'status': 'success', 'channel': 'card', 'domain': 'test', 'message': None, 'fees_split': None, 'currency': 'NGN', 'metadata': {'custom_fields': [{'display_name': 'Mobile Number', 'value': '+2348012345678', 'variable_name': 'mobile_number'}], 'referrer': 'http://127.0.0.1:8000/zeraplans/transaction/complete/'}}

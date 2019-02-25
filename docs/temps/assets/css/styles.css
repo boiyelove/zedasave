@@ -1,0 +1,157 @@
+html {
+  width: 100%;
+  overflow-x: hidden; }
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'PT Serif', serif; }
+
+h1, h2, h3, h4, h5, h6, .lead, .control-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+th {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; }
+
+p {
+  padding: 10px; }
+
+#centered-block {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.centered {
+  text-align: center;
+  border: 1px solid rgba(122, 0, 0, 0.22);
+  display: block;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.48);
+  position: relative;
+  margin: auto; }
+
+#footer {
+  display: block;
+  position: relative;
+  background-color: #232323;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #footer .list-inline > li {
+    margin-right: 15px; }
+
+@media only screen and (min-width: 768px) {
+  .centered {
+    padding: 40px;
+    width: 30%; } }
+@media only screen and (max-width: 768px) {
+  .centered {
+    padding: 15px;
+    width: 80%; } }
+nav {
+  background-color: #fff; }
+  nav a {
+    color: #7a0000; }
+
+nav.navbar {
+  border-bottom-color: #7a0000;
+  border-bottom-width: 3px; }
+  nav.navbar li a:hover {
+    background-color: #7a0000;
+    color: #fff !important; }
+
+.nav {
+  background-color: #fff; }
+  .nav a {
+    color: #7a0000; }
+
+.nav-pills {
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.48); }
+
+.nav-pills > li > a {
+  border-radius: 0px; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #7a0000; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  background-color: #286090;
+  color: #fff; }
+
+.nav-stacked > li {
+  border-bottom: 1px solid #dedddd; }
+
+.icon-box {
+  padding: 50px;
+  background-color: #fff;
+  width: 90%;
+  margin: auto; }
+  .icon-box:hover {
+    background-color: #7a0000 !important;
+    color: #fff; }
+
+.icon-box-out {
+  padding: 20px; }
+
+.item-list {
+  margin: 5px 5px 20px 5px;
+  padding: 20px;
+  min-height: 100px;
+  background-color: #fff;
+  width: 98%;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.48);
+  border-top: 2px solid #7a0000; }
+
+.item-list-item {
+  padding: 20px 5px 20px 5px; }
+
+.item-space {
+  padding: 20px 5px 20px 10px; }
+
+.icon-badge {
+  background-color: #7a0000;
+  color: #fff;
+  padding: 20px 5px 20px 10px; }
+  .icon-badge a {
+    color: #fff; }
+    .icon-badge a:hover {
+      color: #5A80A2; }
+  .icon-badge:hover {
+    background-color: #9cc8ef; }
+
+.main {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.right-main {
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  border-top: 2px solid #7a0000;
+  box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.48); }
+
+#page-content {
+  padding-top: 30px;
+  margin-bottom: 100px; }
+
+.hidden-box {
+  width: 80%;
+  background-color: #f5f5f5; }
+
+.btn {
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px 0px #9E9E9E; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #7a0000;
+  border-color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */
